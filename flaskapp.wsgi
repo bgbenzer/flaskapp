@@ -1,5 +1,3 @@
-import sys
-
-sys.path.insert(0,'/var/www/html/ApacheDeneme')
-
-from ApacheDeneme import app as application
+import sys 
+sys.path.insert(0, '/var/www/html/flaskapp')
+from flaskapp import app as application
