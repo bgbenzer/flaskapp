@@ -1,10 +1,9 @@
+# flaskapp.py
+# This is a "hello world" app sample for flask app. You may have a different file.
 from flask import Flask
-from views import views
-
 app = Flask(__name__)
-app.register_blueprint(views, url_prefix="/")
-
-
-
+@app.route('/') 
+def hello_world():
+   return 'Hello from Flask!' 
 if __name__ == '__main__':
-    app.run(debug=True,port=8000)
+   app.run()
